@@ -157,27 +157,27 @@ struct FontConfig {
     };
 
 // clang-format off
-FONT_STYLE(Headline, u"GoogleSansFlex"_s,
+FONT_STYLE(Headline, u"Monocraft"_s,
     FONT({ .size = 32, .weight = QFont::Medium }),
     FONT({ .size = 28, .weight = QFont::Medium }),
     FONT({ .size = 24, .weight = QFont::Medium })
 )
-FONT_STYLE(Title, u"GoogleSansFlex"_s,
+FONT_STYLE(Title, u"Monocraft"_s,
     FONT({ .size = 22, .weight = QFont::Medium }),
     FONT({ .size = 16, .weight = QFont::Medium }),
     FONT({ .size = 14, .weight = QFont::Medium })
 )
-FONT_STYLE(Body, u"GoogleSansFlex"_s,
+FONT_STYLE(Body, u"Monocraft"_s,
     FONT({ .size = 16 }),
     FONT({ .size = 14 }),
     FONT({ .size = 12 })
 )
-FONT_STYLE(Label, u"GoogleSansFlex"_s,
+FONT_STYLE(Label, u"Monocraft"_s,
     FONT({ .size = 14, .weight = QFont::Medium }),
     FONT({ .size = 12, .weight = QFont::Medium }),
     FONT({ .size = 11 })
 )
-FONT_STYLE(Mono, u"CaskaydiaCove NF"_s,
+FONT_STYLE(Mono, u"Monocraft"_s,
     FONT({ .size = 16, .vaxes = {} }),
     FONT({ .size = 14, .vaxes = {} }),
     FONT({ .size = 12, .vaxes = {} })
@@ -214,9 +214,9 @@ class AppearanceFont : public settings::ObjectNode {
     CONFIG_SUBOBJECT(FontStyleLabel, label)
     CONFIG_SUBOBJECT(FontStyleMono, mono)
     CONFIG_SUBOBJECT(FontStyleIcon, icon)
-    CONFIG_PROPERTY(QString, clock, u"Rubik"_s)
+    CONFIG_PROPERTY(QString, clock, u"Monocraft"_s)
     // Google Sans Flex doesn't play well with unicode symbols apparently, so use Rubik instead
-    CONFIG_PROPERTY(QString, workspaces, u"Rubik"_s)
+    CONFIG_PROPERTY(QString, workspaces, u"Monocraft"_s)
 };
 
 class AnimDurations : public settings::ObjectNode {
@@ -265,9 +265,9 @@ class AppearanceAnim : public settings::ObjectNode {
 class AppearanceTransparency : public settings::ObjectNode {
     CONFIG_NODE(AppearanceTransparency, settings::ObjectNode)
 
-    CONFIG_GLOBAL_PROPERTY(bool, enabled, false)
-    CONFIG_GLOBAL_PROPERTY(qreal, base, 0.85)
-    CONFIG_GLOBAL_PROPERTY(qreal, layers, 0.4)
+    CONFIG_GLOBAL_PROPERTY(bool, enabled, true)
+    CONFIG_GLOBAL_PROPERTY(qreal, base, 0.1)
+    CONFIG_GLOBAL_PROPERTY(qreal, layers, 0.1)
 };
 
 class AppearanceConfig : public settings::ObjectNode {
