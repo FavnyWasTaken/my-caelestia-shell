@@ -2,6 +2,9 @@
 
 # Caelestia Shell — Favny’s Fork
 
+<img width="2557" height="1437" alt="image" src="https://github.com/user-attachments/assets/8dc56c99-fc12-41aa-92d6-30f8022009a4" />
+
+
 **A customized Caelestia Shell fork made for my personal dotfiles.**
 
 [![Based on Caelestia Shell](https://img.shields.io/badge/based%20on-Caelestia%20Shell-8a8a8a)](https://github.com/caelestia-dots/shell)
